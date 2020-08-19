@@ -16,5 +16,8 @@
 	2.12. [Discord Storage]()<br/>
 	2.13. [Discord Store]()<br/>
 	2.14. [Discord User]()<br/>
-3. [Troubleshooting]()<br/>
-4. [Contact]()<br/>
+3. [Examples]()<br/>
+	3.1. [Blueprint Examples]()<br/>
+	3.2. [C++ Examples]()<br/>
+5. [Troubleshooting]()<br/>
+6. [Contact]()<br/>
