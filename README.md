@@ -35,6 +35,7 @@ Start to open the configuration window by clicking on the Discord icon and choos
 ### 1.1.2. Download the SDK
 In the configuration window, click on `Download the SDK`:
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/InvalidSdkWindow.png?raw=true)
+
 Wait until the process complete, and it's already done, the Discord SDK is installed and ready to be used.
 | :information_source: |If the installation fails, you'll have to download the SDK manually. Don't worry, it's not that difficult !|
 |:--:|---|
