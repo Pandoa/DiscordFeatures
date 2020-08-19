@@ -20,9 +20,9 @@
 	3.13. [Discord Store]()<br/>
 	3.14. [Discord User]()<br/>
 3. [Getting started]()<br/>
-3. [Examples]()<br/>
-	4.1. [Blueprint Examples]()<br/>
-	4.2. [C++ Examples]()<br/>
+5. [Examples]()<br/>
+	5.1. [Blueprint Examples]()<br/>
+	5.2. [C++ Examples]()<br/>
 4. [Troubleshooting]()<br/>
 5. [Contact]()<br/>
 
@@ -47,7 +47,9 @@ You then need to extract it to `/DiscordFeatures/ThirdParty/DiscordSdk/`.
 If it is installed correctly, the `Discord Configuration Window` won't ask you to download the SDK.
 # 2. Configure the SDK
 Open the configuration window by clicking on the Discord icon and choosing `Configure the Discord SDK`: 
+
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/OpenConfigureWindow.png?raw=true)
+
 In the window, set your application ID with the one of your application. You can create and get your application ID from [Discord]([https://discord.com/developers/applications](https://discord.com/developers/applications)).
 You can set your secret bot token as well if you plan to use the Discord editor tools.
 | :warning: |The secret bot token is stored in an Editor-only config file called `DiscordSdkEditor.ini`. Think to exclude it from source control if needed. |
