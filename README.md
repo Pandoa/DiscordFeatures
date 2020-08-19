@@ -54,52 +54,52 @@ You don't need to do anything for Blueprints and can just start using these modu
 This module handles the Discord SDK and load it correctly. It is done for you internally so you won't have to use it.
 ## 2.2. Discord Core
 This is the core of the SDK. This is from where you have access to the managers.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/discord](https://discord.com/developers/docs/game-sdk/discord)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/discord](https://discord.com/developers/docs/game-sdk/discord)</br>
 C++ Module Name: `DiscordCore`
 ## 2.3. Discord Achievement
 This is where are handled the achievements.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/achievements](https://discord.com/developers/docs/game-sdk/achievements)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/achievements](https://discord.com/developers/docs/game-sdk/achievements)</br>
 C++ Module Name: `DiscordAchievement`
 ## 2.4. Discord Activity
 This is where are handled the users' activity and the so famous `Rich Presence`.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/activities](https://discord.com/developers/docs/game-sdk/activities)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/activities](https://discord.com/developers/docs/game-sdk/activities)</br>
 C++ Module Name: `DiscordActivity`
 ## 2.5. Discord Application
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/applications](https://discord.com/developers/docs/game-sdk/applications)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/applications](https://discord.com/developers/docs/game-sdk/applications)</br>
 C++ Module Name: `DiscordApplication`
 ## 2.6. Discord Voice
 This is where to look if you want to implement voice chat in your game.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/discord-voice](https://discord.com/developers/docs/game-sdk/discord-voice)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/discord-voice](https://discord.com/developers/docs/game-sdk/discord-voice)</br>
 C++ Module Name: `DiscordVoice`
 ## 2.7. Discord Image
 This is where images are handle, including users avatars.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/images](https://discord.com/developers/docs/game-sdk/images)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/images](https://discord.com/developers/docs/game-sdk/images)</br>
 C++ Module Name: `DiscordImage`
 ## 2.8. Discord Lobby
 This is where multiplayer and lobbies are handled.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/lobbies](https://discord.com/developers/docs/game-sdk/lobbies)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/lobbies](https://discord.com/developers/docs/game-sdk/lobbies)</br>
 C++ Module Name: `DiscordLobby`
 ## 2.9. Discord Networking
 If you want to use Discord's Networking.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/networking](https://discord.com/developers/docs/game-sdk/networking)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/networking](https://discord.com/developers/docs/game-sdk/networking)</br>
 C++ Module Name: `DiscordNetworking`
 ## 2.10. Discord Overlay
 To manage the build-in Discord overlay.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/overlay](https://discord.com/developers/docs/game-sdk/overlay)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/overlay](https://discord.com/developers/docs/game-sdk/overlay)</br>
 C++ Module Name: `DiscordOverlay`
 ## 2.11. Discord Relationship
 To manage the relationship between your players.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/relationships](https://discord.com/developers/docs/game-sdk/relationships)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/relationships](https://discord.com/developers/docs/game-sdk/relationships)</br>
 C++ Module Name: `DiscordRelationship`
 ## 2.12. Discord Storage
 To store data on Discord's servers.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/storage](https://discord.com/developers/docs/game-sdk/storage)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/storage](https://discord.com/developers/docs/game-sdk/storage)</br>
 C++ Module Name: `DiscordStorage`
 ## 2.13. Discord Store
 For in-app purchases and DLC.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/store](https://discord.com/developers/docs/game-sdk/store)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/store](https://discord.com/developers/docs/game-sdk/store)</br>
 C++ Module Name: `DiscordStore`
 ## 2.14. Discord User
 To retrieve and manage user data.</br>
-Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/users](https://discord.com/developers/docs/game-sdk/users)
+Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/users](https://discord.com/developers/docs/game-sdk/users)</br>
 C++ Module Name: `DiscordUser`
