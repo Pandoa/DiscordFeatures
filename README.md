@@ -3,7 +3,7 @@
 1. [Download the SDK](#installation)<br/>
 	1.1. [With the editor](#manual)<br/>
 	1.2. [Manually](#manual)<br/>
-3. [Modules](#managers)<br/>
+2. [Modules](#managers)<br/>
 	2.1. [Discord SDK]()<br/>
 	2.2. [Discord Core]()<br/>
 	2.3. [Discord Achievement]()<br/>
@@ -18,11 +18,11 @@
 	2.12. [Discord Storage]()<br/>
 	2.13. [Discord Store]()<br/>
 	2.14. [Discord User]()<br/>
-4. [Examples]()<br/>
+3. [Examples]()<br/>
 	3.1. [Blueprint Examples]()<br/>
 	3.2. [C++ Examples]()<br/>
-5. [Troubleshooting]()<br/>
-6. [Contact]()<br/>
+4. [Troubleshooting]()<br/>
+5. [Contact]()<br/>
 
 # 1. Download the SDK
 Before using the plugin, you have to download the Discord Game SDK. To do so you have two options:
@@ -103,3 +103,22 @@ C++ Module Name: `DiscordStore`
 To retrieve and manage user data.</br>
 Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/users](https://discord.com/developers/docs/game-sdk/users)</br>
 C++ Module Name: `DiscordUser`
+# 3. Examples
+## 3.1. Blueprint Examples
+### 3.1.1. Creating the Core
+Creating the core is the starting point when you plan to integrate Discord in you game.
+![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpCreateCore.png?raw=true)
+| :warning: |Make sure the Discord Core doesn't get garbage collected !|
+|:--:|---|
+
+| :information_source: |If you run this code in editor without Discord in background, the Editor will close and launch Discord.|
+|:--:|---|
+### 3.1.2. Rich Presence
+Rich Presence is really easy to implement: 
+![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpRichPresence.png?raw=true)
+## 3.2. C++ Examples
+Coming soon...
+# 4. Troubleshooting
+Coming soon...
+# 5. Contact
+Coming soon...
