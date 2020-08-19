@@ -1,1 +1,2 @@
-# DiscordFeatures
+# Discord - Features
+
