@@ -193,9 +193,9 @@ if (ActivityManager)
     
     ActivityManager->UpdateActivity(Activity, FDiscordResultCallback::CreateLambda([](EDiscordResult Result) 
     {
-	    if (Result == EDiscordResult)
-	    {
-	        // Activity has been updated !
+        if (Result == EDiscordResult)
+        {
+            // Activity has been updated !
         }
         else
         {
