@@ -23,7 +23,6 @@
 5. [Examples]()<br/>
 	5.1. [Blueprint Examples]()<br/>
 	5.2. [C++ Examples]()<br/>
-4. [Troubleshooting]()<br/>
 5. [Contact]()<br/>
 
 # 1. Download the SDK
@@ -193,7 +192,7 @@ if (ActivityManager)
     
     ActivityManager->UpdateActivity(Activity, FDiscordResultCallback::CreateLambda([](EDiscordResult Result) 
     {
-        if (Result == EDiscordResult)
+        if (Result == EDiscordResult::Ok)
         {
             // Activity has been updated !
         }
@@ -204,7 +203,5 @@ if (ActivityManager)
     }));
 }
 ```
-# 6. Troubleshooting
-Coming soon...
-# 7. Contact
-Coming soon...
+# 6. Contact
+If you need help, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
