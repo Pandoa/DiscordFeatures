@@ -155,7 +155,7 @@ if (Manager)
 }
 ```
 ### 4.3.3. Using the Discord Game SDK
-Aside from the specificity of getting a manager, Discord Features is used the *exact* same way as the official SDK. Each methods as the same signature with the types of the Unreal Engine: `Delegates` for `Callbacks`, `FString` for `const char*`, etc. 
+Aside from the specificity of getting a manager, Discord Features is used the *exact* same way as the official SDK. Each method has the same signature with the types of the Unreal Engine instead: `Delegates` for `Callbacks`, `FString` for `string`, etc. 
 This is why you can safely refer to the [official Discord Game SDK documentation]([https://discord.com/developers/docs/game-sdk/sdk-starter-guide](https://discord.com/developers/docs/game-sdk/sdk-starter-guide)).
 # 5. Examples
 ## 5.1. Blueprint Examples
