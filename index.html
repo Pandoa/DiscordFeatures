@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<div id="content"></div>
+<div id="markdown"></div>
 
 <script>
 var Site = "https://raw.githubusercontent.com/Pandoa/DiscordFeatures/master/README.md";
@@ -16,10 +16,10 @@ fetch(Site)
     document.write("Before");
    var converter = new showdown.Converter();
     document.write("mid");
-    var html = converter.makeHtml(data);
+    var md = converter.makeHtml(data);
     document.write("2");
-    document.getElementById("content")
-        .innerHTML = html;
+    document.getElementById("markdown")
+        .innerHTML = md;
     document.write("after");
   });
 
