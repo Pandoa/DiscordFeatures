@@ -9,6 +9,8 @@
 <div id="markdown"></div>
 
 <script>
+(function()
+{
 var Site = "https://raw.githubusercontent.com/Pandoa/DiscordFeatures/master/README.md";
 fetch(Site)
   .then(response => response.text())
@@ -23,6 +25,7 @@ fetch(Site)
 alert(mdEl);
     mdEl.innerHTML = md;
   });
+})();
 
 </script>
 
