@@ -10,24 +10,24 @@
 
 <script>
 (function(){
-setTimeout((function()
-{
-var Site = "https://raw.githubusercontent.com/Pandoa/DiscordFeatures/master/README.md";
-fetch(Site)
-  .then(response => response.text())
-  .then((data) => {
-    document.write("Before");
-   var converter = new showdown.Converter();
-    document.write("mid");
-    var md = converter.makeHtml(data);
-    document.write("dle");
-    var mdEl = document.getElementById("md-cont");
-    document.write("after");
-alert(mdEl);
-    mdEl.innerHTML = md;
-    document.write(1726);
-  });
-}), 100);
+    setTimeout((function()
+    {
+        var Site = "https://raw.githubusercontent.com/Pandoa/DiscordFeatures/master/README.md";
+        fetch(Site)
+        .then(response => response.text())
+        .then((data) => {
+          document.write("Before");
+          var converter = new showdown.Converter();
+          document.write("mid");
+          var md = converter.makeHtml(data);
+          document.write("dle");
+          var mdEl = document.getElementById("md-cont");
+          document.write("after");
+          alert(mdEl);
+          mdEl.innerHTML = md;
+          document.write(1726);
+        });
+    }), 100);
 })();
 
 </script>
