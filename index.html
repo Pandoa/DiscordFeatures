@@ -14,10 +14,13 @@ fetch(Site)
    var converter = new showdown.Converter(),
     text      = data,
     html      = converter.makeHtml(text);
-    document.body.innerHTML += html;
+    document.getElementById("#content")
+        .innerHTML = html;
   })
 
 </script>
+
+<div id="content"></div>
 
 </body>
 </html>
