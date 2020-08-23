@@ -13,16 +13,15 @@ var Site = "https://raw.githubusercontent.com/Pandoa/DiscordFeatures/master/READ
 fetch(Site)
   .then(response => response.text())
   .then((data) => {
-    document.write(data);
+    document.write("Before");
    var converter = new showdown.Converter();
     var html = converter.makeHtml(data);
     document.getElementById("content")
         .innerHTML = html;
+    document.write("after");
   });
-document.write(1);
 
 </script>
-aaaa
 
 </body>
 </html>
