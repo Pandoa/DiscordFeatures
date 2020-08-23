@@ -18,9 +18,9 @@ fetch(Site)
     document.write("mid");
     var md = converter.makeHtml(data);
     document.write("2");
-    document.getElementById("markdown")
-        .innerHTML = md;
+    var mdEl = document.getElementById("markdown");
     document.write("after");
+    mdEl.innerHTML = md;
   });
 
 </script>
