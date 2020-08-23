@@ -15,6 +15,7 @@ fetch(Site)
   .then((data) => {
     document.write("Before");
    var converter = new showdown.Converter();
+    document.write("mid");
     var html = converter.makeHtml(data);
     document.getElementById("content")
         .innerHTML = html;
