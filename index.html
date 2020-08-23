@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<div id="markdown"></div>
+<div id="md-cont"></div>
 
 <script>
 (function(){
@@ -21,7 +21,7 @@ fetch(Site)
     document.write("mid");
     var md = converter.makeHtml(data);
     document.write("3");
-    var mdEl = document.getElementById("markdown");
+    var mdEl = document.getElementById("md-cont");
     document.write("aftert");
 alert(mdEl);
     mdEl.innerHTML = md;
