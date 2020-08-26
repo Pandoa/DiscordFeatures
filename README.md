@@ -1,10 +1,11 @@
+
 # Discord - Features
 ## Table of content
-1. [Download the SDK](#installation)<br/>
-	1.1. [With the editor](#manual)<br/>
-	1.2. [Manually](#manual)<br/>
-2. [Configure the SDK]()</br>
-3. [Modules](#managers)<br/>
+1. [Downloading the SDK](#1-download-the-sdk)<br/>
+	1.1. [With the editor](#11-download-the-sdk-from-the-editor)<br/>
+	1.2. [Manually](#12-download-the-sdk-manually)<br/>
+2. [Configure the SDK](2-configure-the-sdk)</br>
+3. [Modules](#3-modules)<br/>
 	3.1. [Discord SDK]()<br/>
 	3.2. [Discord Core]()<br/>
 	3.3. [Discord Achievement]()<br/>
@@ -19,11 +20,11 @@
 	3.12. [Discord Storage]()<br/>
 	3.13. [Discord Store]()<br/>
 	3.14. [Discord User]()<br/>
-3. [Getting started]()<br/>
-5. [Examples]()<br/>
-	5.1. [Blueprint Examples]()<br/>
-	5.2. [C++ Examples]()<br/>
-5. [Contact]()<br/>
+3. [Getting started](4-getting-started)<br/>
+5. [Examples](5-examples)<br/>
+	5.1. [Blueprint Examples](51-blueprint-examples)<br/>
+	5.2. [C++ Examples](52-c-examples)<br/>
+5. [Contact](6-contact)<br/>
 
 # 1. Download the SDK
 Before using the plugin, you have to download the Discord Game SDK. To do so you have two options:
@@ -204,4 +205,4 @@ if (ActivityManager)
 }
 ```
 # 6. Contact
-If you need help, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
+If you need help, spotted a bug, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
