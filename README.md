@@ -1,30 +1,31 @@
 
 # Discord - Features
+![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/DiscordFeatures.PNG?raw=true)
 ## Table of content
 1. [Downloading the SDK](#1-download-the-sdk)<br/>
 	1.1. [With the editor](#11-download-the-sdk-from-the-editor)<br/>
 	1.2. [Manually](#12-download-the-sdk-manually)<br/>
-2. [Configure the SDK](2-configure-the-sdk)</br>
+2. [Configure the SDK](#2-configure-the-sdk)</br>
 3. [Modules](#3-modules)<br/>
-	3.1. [Discord SDK]()<br/>
-	3.2. [Discord Core]()<br/>
-	3.3. [Discord Achievement]()<br/>
-	3.4. [Discord Activity]()<br/>
-	3.5. [Discord Application]()<br/>
-	3.6. [Discord Voice]()<br/>
-	3.7. [Discord Image]()<br/>
-	3.8. [Discord Lobby]()<br/>
-	3.9. [Discord Networking]()<br/>
-	3.10. [Discord Overlay]()<br/>
-	3.11. [Discord Relationship]()<br/>
-	3.12. [Discord Storage]()<br/>
-	3.13. [Discord Store]()<br/>
-	3.14. [Discord User]()<br/>
-3. [Getting started](4-getting-started)<br/>
-5. [Examples](5-examples)<br/>
-	5.1. [Blueprint Examples](51-blueprint-examples)<br/>
-	5.2. [C++ Examples](52-c-examples)<br/>
-5. [Contact](6-contact)<br/>
+	3.1. [Discord SDK](#31-discord-sdk)<br/>
+	3.2. [Discord Core](#32-discord-core)<br/>
+	3.3. [Discord Achievement](#33-discord-achievement)<br/>
+	3.4. [Discord Activity](#34-discord-activity)<br/>
+	3.5. [Discord Application](#35-discord-application)<br/>
+	3.6. [Discord Voice](#36-discord-voice)<br/>
+	3.7. [Discord Image](#37-discord-image)<br/>
+	3.8. [Discord Lobby](#38-discord-lobby)<br/>
+	3.9. [Discord Networking](#39-discord-networking)<br/>
+	3.10. [Discord Overlay](#310-discord-overlay)<br/>
+	3.11. [Discord Relationship](#311-discord-relationship)<br/>
+	3.12. [Discord Storage](#312-discord-storage)<br/>
+	3.13. [Discord Store](#313-discord-store)<br/>
+	3.14. [Discord User](#314-discord-user)<br/>
+4. [Getting started](#4-getting-started)<br/>
+5. [Examples](#5-examples)<br/>
+	5.1. [Blueprint Examples](#51-blueprint-examples)<br/>
+	5.2. [C++ Examples](#52-c-examples)<br/>
+5. [Contact](#6-contact)<br/>
 
 # 1. Download the SDK
 Before using the plugin, you have to download the Discord Game SDK. To do so you have two options:
