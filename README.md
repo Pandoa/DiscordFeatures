@@ -37,7 +37,7 @@ Start to open the configuration window by clicking on the Discord icon and choos
 In the configuration window, click on `Download the SDK`:
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/InvalidSdkWindow.png?raw=true)
 
-Wait until the process complete, and it's already done, the Discord SDK is installed and ready to be used.
+Wait until the process is over, and it's already done, the Discord SDK is installed and ready to be used.
 | :information_source: |If the installation fails, you'll have to download the SDK manually. Don't worry, it's not that difficult !|
 |:--:|---|
 ## 1.2. Download the SDK manually
@@ -59,7 +59,16 @@ You can set your secret bot token as well if you plan to use the Discord editor 
 The Discord Features Plugin is separated in several modules. Each module contains a set of functionalities.
 To use one in C++, you have to add the module to your `Build.cs` file:
 ```csharp
-PrivateDependencyModuleNames.Add("DiscordCore");
+PrivateDependencyModuleNames.Add("DiscordCore"); // Add one module
+```
+or to add more than one:
+```csharp
+PrivateDependencyModuleNames.AddRange(new string[]
+{
+    "DiscordLobby",    // Add one...
+    "DiscordNetwork",  // two...
+    "DiscordImage"     // three modules
+});
 ```
 You don't need to do anything for Blueprints and can just start using these modules. 
 ## 3.1 Discord SDK
@@ -123,7 +132,8 @@ Discord Features tries to look as much as possible like the  [official Discord G
 
 Nodes that require a callback as parameter have been implemented as a single asynchronous node with multiple output pins. It allows a faster development and to have a better view of your code:
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpAsyncNode.png?raw=true)
-
+| :information_source: |The `On Error` pin is executed if `Result` is not equal to `EDiscordResult::Ok`.|
+|:--:|:---|
 ## 4.3. C++
 ### 4.3.1. Includes
 Here is an exhaustive list of includes available:
@@ -158,7 +168,7 @@ if (Manager)
 ```
 ### 4.3.3. Using the Discord Game SDK
 Aside from the specificity of getting a manager, Discord Features is used the *exact* same way as the official SDK. Each method has the same signature with the types of the Unreal Engine instead: `Delegates` for `Callbacks`, `FString` for `string`, etc. 
-This is why you can safely refer to the [official Discord Game SDK documentation]([https://discord.com/developers/docs/game-sdk/sdk-starter-guide](https://discord.com/developers/docs/game-sdk/sdk-starter-guide)).
+This is why you can safely refer to the [official Discord Game SDK documentation]([https://discord.com/developers/docs/game-sdk/sdk-starter-guide](https://discord.com/developers/docs/game-sdk/sdk-starter-guide)) and to [the C++ examples](#52-c-examples).
 # 5. Examples
 ## 5.1. Blueprint Examples
 ### 5.1.1. Creating the Core
