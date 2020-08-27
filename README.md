@@ -1,4 +1,5 @@
 
+
 # Discord - Features
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/DiscordFeatures.PNG?raw=true)
 ## Table of content
@@ -241,7 +242,7 @@ if (LobbyManager && UserManager)
         }
         else
         {
-            // An error occured
+            // An error occured !
         }
     }));
 }
