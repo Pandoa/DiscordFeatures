@@ -174,7 +174,7 @@ This is why you can safely refer to the [official Discord Game SDK documentation
 ### 5.1.1. Creating the Core
 Creating the core is the starting point when you plan to integrate Discord in you game.
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpCreateCore.png?raw=true)
-| :warning: |Make sure the Discord Core doesn't get garbage collected !|
+| :warning: |Make sure the Discord Core doesn't get garbage collected! The Core keeps a hard reference to the managers. The managers are valid while the Core is not garbage collected.|
 |:--:|:---|
 
 | :information_source: |If you run this code in editor without Discord in background, the Editor will close and launch Discord.|
@@ -182,6 +182,8 @@ Creating the core is the starting point when you plan to integrate Discord in yo
 ### 5.1.2. Rich Presence
 Rich Presence is really easy to implement: 
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpRichPresence.png?raw=true)
+### 5.1.3. Create a Lobby
+![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpCreateLobby.png?raw=true)
 ## 5.2. C++ Examples
 ### 5.2.1. Creating the Core
 ```cpp
