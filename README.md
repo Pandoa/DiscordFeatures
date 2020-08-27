@@ -217,5 +217,34 @@ if (ActivityManager)
     }));
 }
 ```
+### 5.2.3. Create a Lobby
+```cpp
+
+UDiscordLobbyManager* LobbyManager = UDiscordLobbyManager::GetLobbyManager(DiscordCore);
+UDiscordUserManager*  UserManager  = UDiscordUserManager::GetUserManager(DiscordCore);
+if (LobbyManager && UserManager)
+{
+    const FDiscordUser User = UserManager->GetCurrentUser();
+    
+    FDiscordLobbyTransaction Transaction = LobbyManager->GetLobbyCreateTransaction();
+    Transaction.SetCapacity(10);
+    Transaction.SetLocked(false);
+    Transaction.SetMetadata(TEXT("SomeKey"), TEXT("SomeValue"));
+    Transaction.SetOwner(User.Id);
+    Transaction.SetType(EDiscordLobbyType::Private);
+
+    LobbyManager->CreateLobby(Transaction, FLobbyCallback::CreateLambda([](EDiscordResult Result, FDiscordLobby& Lobby)
+    {
+        if (Result == EDiscordResult::Ok)
+        {
+            // Lobby created.
+        }
+        else
+        {
+            // An error occured
+        }
+    }));
+}
+```
 # 6. Contact
 If you need help, spotted a bug, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
