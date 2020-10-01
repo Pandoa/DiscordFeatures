@@ -128,7 +128,7 @@ To retrieve and manage user data.</br>
 Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/users](https://discord.com/developers/docs/game-sdk/users)</br>
 C++ Module Name: `DiscordUser`
 ## 3.15 Discord Gateway
-Used to interact with the Discord Gateway.
+Used to interact with the Discord Gateway.</br>
 Official Discord Documentation: [https://discord.com/developers/docs/topics/gateway](https://discord.com/developers/docs/topics/gateway)</br>
 C++ Module Name: `DiscordGateway`
 |:information_source:|This module doesn't require the Discord Game SDK and is compatible with any platform.|
