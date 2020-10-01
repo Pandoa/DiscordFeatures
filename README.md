@@ -255,7 +255,7 @@ if (LobbyManager && UserManager)
     }));
 }
 ```
-# 6 Discord Gateway
+# 6. Discord Gateway
 The [Discord Gateway](https://discord.com/developers/docs/topics/gateway) can be used to establish a real-time communication with the Discord API over secure WebSockets. This plugin offers an interface to interact with the Discord Gateway.
 
 You can connect to the Gateway with the `Connect To Discord Gateway` node:
