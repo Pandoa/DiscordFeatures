@@ -22,11 +22,13 @@
 	3.12. [Discord Storage](#312-discord-storage)<br/>
 	3.13. [Discord Store](#313-discord-store)<br/>
 	3.14. [Discord User](#314-discord-user)<br/>
+	3.15. [Discord Gateway](#315-discord-gateway)<br/>
 4. [Getting started](#4-getting-started)<br/>
 5. [Examples](#5-examples)<br/>
 	5.1. [Blueprint Examples](#51-blueprint-examples)<br/>
 	5.2. [C++ Examples](#52-c-examples)<br/>
-5. [Contact](#6-contact)<br/>
+6. [Discord Gateway](#6-discord-gateway)<br/>
+7. [Contact](#7-contact)<br/>
 
 # 1. Download the SDK
 Before using the plugin, you have to download the Discord Game SDK. To do so you have two options:
@@ -125,6 +127,12 @@ C++ Module Name: `DiscordStore`
 To retrieve and manage user data.</br>
 Official Discord Documentation: [https://discord.com/developers/docs/game-sdk/users](https://discord.com/developers/docs/game-sdk/users)</br>
 C++ Module Name: `DiscordUser`
+## 3.15 Discord Gateway
+Used to interact with the Discord Gateway.
+Official Discord Documentation: [https://discord.com/developers/docs/topics/gateway](https://discord.com/developers/docs/topics/gateway)</br>
+C++ Module Name: `DiscordGateway`
+|:information_source:|This module doesn't require the Discord Game SDK and is compatible with any platform.|
+|:---:|:---|
 # 4. Getting started
 ## 4.1. About the `RunCallbacks` function
 If you read the Discord Game SDK documentation or you already worked with the Discord Game SDK, you might know that the `RunCallbacks` should be called every tick. However, you don't have to worry anymore for it ! Discord Features automatically call the `RunCallbacks` function of Discord Core as well as the `Flush` function of Discord Network Manager.
@@ -247,5 +255,14 @@ if (LobbyManager && UserManager)
     }));
 }
 ```
-# 6. Contact
+# 6 Discord Gateway
+The [Discord Gateway](https://discord.com/developers/docs/topics/gateway) can be used to establish a real-time communication with the Discord API over secure WebSockets. This plugin offers an interface to interact with the Discord Gateway.
+
+You can connect to the Gateway with the `Connect To Discord Gateway` node:
+
+![Blueprints Connect to Gateway example](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpConnectToGateway.png?raw=true)
+
+Once you have a `UDiscordGatewaySocket` object, you can start sending and receiving commands to/from the Discord Gateway. 
+
+# 7. Contact
 If you need help, spotted a bug, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
