@@ -73,7 +73,8 @@ PrivateDependencyModuleNames.AddRange(new string[]
     "DiscordImage"     // three modules
 });
 ```
-You don't need to do anything for Blueprints and can just start using these modules. 
+|:information_source:|You don't need to do anything for Blueprints and can just start using these modules. |
+|:---:|:---|
 ## 3.1 Discord SDK
 This module handles the Discord SDK and load it correctly. It is done for you internally so you won't have to use it.
 ## 3.2. Discord Core
