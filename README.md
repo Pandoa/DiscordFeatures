@@ -161,6 +161,7 @@ Here is an exhaustive list of includes available:
 #include "DiscordStoreManager.h"        // For UDiscordStoreManager
 #include "DiscordUserManager.h"         // For UDiscordUserManager
 #include "DiscordVoiceManager.h"        // For UDiscordVoiceManager
+#include "DiscordGatewaySocket.h"       // For UDiscordGatewaySocket
 ```
 ### 4.3.2. Getting a Manager
 The Discord Game SDK has several managers to handle functionalities. You can get those managers from a `Discord Core`.
