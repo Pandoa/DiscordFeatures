@@ -23,12 +23,15 @@
 	3.13. [Discord Store](#313-discord-store)<br/>
 	3.14. [Discord User](#314-discord-user)<br/>
 	3.15. [Discord Gateway](#315-discord-gateway)<br/>
+	3.16. [Discord HTTP API](#315-discord-http-api)<br/>
 4. [Getting started](#4-getting-started)<br/>
 5. [Examples](#5-examples)<br/>
 	5.1. [Blueprint Examples](#51-blueprint-examples)<br/>
 	5.2. [C++ Examples](#52-c-examples)<br/>
-6. [Discord Gateway](#6-discord-gateway)<br/>
-7. [Contact](#7-contact)<br/>
+6. [Discord HTTP API](#6-discord-http-api)<br/>
+	6.1.  [Webhooks](#61-webhooks)<br/>
+7. [Discord Gateway](#7-discord-gateway)<br/>
+8. [Contact](#8-contact)<br/>
 
 # 1. Download the SDK
 Before using the plugin, you have to download the Discord Game SDK. To do so you have two options:
@@ -134,6 +137,12 @@ Official Discord Documentation: [https://discord.com/developers/docs/topics/gate
 C++ Module Name: `DiscordGateway`
 |:information_source:|This module doesn't require the Discord Game SDK and is compatible with any platform.|
 |:---:|:---|
+## 3.16 Discord HTTP API
+Used to interact with the Discord API.</br>
+Official Discord Documentation: [https://discord.com/developers/docs/resources/webhook](https://discord.com/developers/docs/resources/webhook)</br>
+C++ Module Name: `DiscordHttpApi`
+|:information_source:|This module doesn't require the Discord Game SDK and is compatible with any platform.|
+|:---:|:---|
 # 4. Getting started
 ## 4.1. About the `RunCallbacks` function
 If you read the Discord Game SDK documentation or you already worked with the Discord Game SDK, you might know that the `RunCallbacks` should be called every tick. However, you don't have to worry anymore for it ! Discord Features automatically call the `RunCallbacks` function of Discord Core as well as the `Flush` function of Discord Network Manager.
@@ -195,6 +204,8 @@ Rich Presence is really easy to implement:
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpRichPresence.png?raw=true)
 ### 5.1.3. Create a Lobby
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/BpCreateLobby.png?raw=true)
+### 5.2.4. Send a message with Webhooks
+![]()
 ## 5.2. C++ Examples
 ### 5.2.1. Creating the Core
 ```cpp
@@ -257,7 +268,72 @@ if (LobbyManager && UserManager)
     }));
 }
 ```
-# 6. Discord Gateway
+### 5.2.4. Send a message with Webhooks
+You can send a message to a channel with Webhooks. These messages can contain embed content as well.
+```cpp
+#include "DiscordWebhookLibrary.h"
+
+// ...
+
+// Get information about the Webhook we want to execute.
+FDiscordWebhookLibrary::GetWebhook
+(
+    9823290121, // Webhook Snowflake. 
+
+    // Callback called when the information about the Webhook has been received.
+    FDiscordGetWebhook::CreateLambda([](const FDiscordWebhook& Webhook) -> void 
+    {
+        FDiscordWebhookData MessageToSend;
+
+        MessageToSend.Username    = TEXT("My UE4 Bot");        // Username displayed with the message
+        MessageToSend.Avatar      = TEXT("...");               // Avatar displayed with the message
+        MessageToSend.Content     = TEXT("Hello @everyone.");  // Message content.
+            
+        // MessageToSend.Embeds for embeds, MessageToSend.File for files, ...
+
+        // Finally execute the Webhook.
+        FDiscordWebhookLibrary::ExecuteWebhook
+        (
+            Webhook.Id,
+            Webhook.Token,
+            MessageToSend,
+            FDiscordExecuteWebhook::CreateLambda([](const bool bExecuted) -> void
+            {
+                if (bExecuted)
+                {
+                    // Message posted.
+                }
+                else
+                {
+                    // An error occured, see the output log!
+                }
+            })
+        );
+    })
+);
+```
+
+# 6. Discord HTTP API
+## 6.1. Webhooks
+Webhooks are a low-effort way to post messages to channels in Discord. They do not require a bot user or authentication to use.
+Discord - Features offers a library to easily interact with the Discord HTTP API without needing to touch HTTP requests.
+### 6.1.1. Methods available
+|Name|Description|
+|:---|:---|
+|`CreateWebhook`|Create a new WebHook.|
+|`GetChannelWebhooks`|Returns a list of channel webhook objects. Requires the `MANAGE_WEBHOOKS` permission.|
+|`GetGuildWebhooks`|Returns a list of channel webhook objects. Requires the `MANAGE_WEBHOOKS` permission.|
+|`GetWebhook`|Returns the webhook object for the given id.|
+|`GetWebhookWithToken`|Returns the webhook object for the given id.|
+|`ModifyWebhook`|Modify a webhook. Requires the `MANAGE_WEBHOOKS` permission. Returns the updated webhook object on success.|
+|`ModifyWebhookWithToken`|Modify a webhook. Requires the `MANAGE_WEBHOOKS` permission. Returns the updated webhook object on success.|
+|`DeleteWebhook`|Delete a webhook permanently.|
+|`DeleteWebhookWithToken`|Delete a webhook permanently.|
+|`ExecuteWebhook`|Execute the Webhook.|
+### 6.1.2. Configuration
+To use the Webhooks, you need to have enough credentials to do so. An easy way to do it is to create a bot and [get a secret bot token](https://discord.com/developers/applications/). Copy the secret Bot Token to the Discord HTTP API settings window located in `Project Settings > Plugins > Discord HTTP API`.
+![Discord HTTP API config window](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/WebhookConfigWindow.png?raw=true)
+# 7. Discord Gateway
 The [Discord Gateway](https://discord.com/developers/docs/topics/gateway) can be used to establish a real-time communication with the Discord API over secure WebSockets. This plugin offers an interface to interact with the Discord Gateway.
 
 You can connect to the Gateway with the `Connect To Discord Gateway` node:
@@ -266,5 +342,5 @@ You can connect to the Gateway with the `Connect To Discord Gateway` node:
 
 Once you have a `UDiscordGatewaySocket` object, you can start sending and receiving commands to/from the Discord Gateway. 
 
-# 7. Contact
+# 8. Contact
 If you need help, spotted a bug, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
