@@ -334,6 +334,8 @@ Discord - Features offers a library to easily interact with the Discord HTTP API
 ### 6.1.2. Configuration
 To use the Webhooks, you need to have enough credentials to do so. An easy way to do it is to create a bot and [get a secret bot token](https://discord.com/developers/applications/). Copy the secret Bot Token to the Discord HTTP API settings window located in `Project Settings > Plugins > Discord HTTP API`.
 ![Discord HTTP API config window](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/WebhookConfigWindow.png?raw=true)
+| :warning: |This method should be used for Dedicated Servers. Be careful that your token doesn't get distributed with your game to the players. The token is stored in `DiscordHttpApi.ini`, see [Unreal Engine Config System](https://docs.unrealengine.com/en-US/Programming/Basics/ConfigurationFiles/index.html) to make per-build config files. |
+|:--:|:---|
 # 7. Discord Gateway
 The [Discord Gateway](https://discord.com/developers/docs/topics/gateway) can be used to establish a real-time communication with the Discord API over secure WebSockets. This plugin offers an interface to interact with the Discord Gateway.
 
