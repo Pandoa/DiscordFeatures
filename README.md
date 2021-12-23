@@ -1,4 +1,5 @@
-
+The documentation has moved [here](https://pandoa.github.io/DiscordFeatures/#/).
+<!--
 
 # [Discord - Features](https://www.unrealengine.com/marketplace/en-US/product/game-sdk-features)
 ![](https://github.com/Pandoa/DiscordFeatures/blob/master/Doc/DiscordFeatures.PNG?raw=true)
@@ -347,3 +348,5 @@ Once you have a `UDiscordGatewaySocket` object, you can start sending and receiv
 
 # 8. Contact
 If you need help, spotted a bug, have a feature request or experience troubles, please contact us at [pandores.marketplace@gmail.com](mailto:pandores.marketplace+DiscordFeatures@gmail.com?subject=DiscordFeatures%20-%20).
+
+-->
